@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="guia12_e2">
+  <ClassDiagramComponents>
+    <Class name="Electrodomesticos" package="" visibility="public" xPosition="41.0" yPosition="52.0">
+      <Fields>
+        <Field name="precio" type="Double" visibility="private"/>
+        <Field name="color" type="String" visibility="private"/>
+        <Field name="consumo" type="Character" visibility="private"/>
+        <Field name="peso" type="Double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Electrodomesticos" returnType="void" visibility="public"/>
+        <Method name="Electrodomesticos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

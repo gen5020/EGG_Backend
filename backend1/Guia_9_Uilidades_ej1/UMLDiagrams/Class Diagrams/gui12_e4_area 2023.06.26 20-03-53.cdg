@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="gui12_e4_area">
+  <ClassDiagramComponents>
+    <Class name="Circulo" package="guia12_e4_area" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="radio" type="double" visibility="private"/>
+        <Field name="diametro" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="double" name="radio"/>
+          <Argument type="double" name="diametro"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getRadio" returnType="double" visibility="public"/>
+        <Method name="setRadio" returnType="void" visibility="public">
+          <Argument type="double" name="radio"/>
+        </Method>
+        <Method name="getDiametro" returnType="double" visibility="public"/>
+        <Method name="setDiametro" returnType="void" visibility="public">
+          <Argument type="double" name="diametro"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="calcularArea" returnType="void" visibility="public"/>
+        <Method name="calcularPerimetro" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Guia12_e4_area" package="guia12_e4_area" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Rectangulo" package="guia12_e4_area" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="base" type="Double" visibility="private"/>
+        <Field name="altura" type="Double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Double" name="base"/>
+          <Argument type="Double" name="altura"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getBase" returnType="Double" visibility="public"/>
+        <Method name="setBase" returnType="void" visibility="public">
+          <Argument type="Double" name="base"/>
+        </Method>
+        <Method name="getAltura" returnType="Double" visibility="public"/>
+        <Method name="setAltura" returnType="void" visibility="public">
+          <Argument type="Double" name="altura"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="calcularArea" returnType="void" visibility="public"/>
+        <Method name="calcularPerimetro" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="CirculoServicio" package="servicio" visibility="public" xPosition="90.0" yPosition="416.0">
+      <Fields>
+        <Field name="leer" type="Scanner" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="crearCirculo" returnType="Circulo" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="RectanguloServicio" package="servicio" visibility="public" xPosition="704.0" yPosition="392.0">
+      <Fields>
+        <Field name="leer" type="Scanner" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="llenarDatos" returnType="Rectangulo" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="calcularFormas" package="interfaces" visibility="public" xPosition="435.0" yPosition="427.0">
+      <Methods>
+        <Method name="calcularArea" returnType="void" visibility="public"/>
+        <Method name="calcularPerimetro" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="servicio.RectanguloServicio" target="guia12_e4_area.Rectangulo" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="servicio.CirculoServicio" target="guia12_e4_area.Circulo" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="guia12_e4_area.Rectangulo" target="interfaces.calcularFormas"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="guia12_e4_area.Circulo" target="interfaces.calcularFormas"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

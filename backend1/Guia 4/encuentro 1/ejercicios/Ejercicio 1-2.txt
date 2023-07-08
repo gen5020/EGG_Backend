@@ -1,0 +1,4 @@
+1.2. Crear una carpeta que contenga un archivo .txt con un mensaje inicial
+"Segunda parte del ejercicio con GitHub y GitBash"
+1.14 Podría cambiar el mensaje del .txt y repetir los pasos desde el 8 al 10 y debería ver en la
+página de git mis cambios
